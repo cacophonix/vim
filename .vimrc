@@ -2,7 +2,6 @@
 call pathogen#infect()
 
 syntax on
-
 filetype plugin indent on
 set autoindent
 set cindent
@@ -13,8 +12,6 @@ set nocompatible
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-
-
 set expandtab
 set number
 set incsearch
@@ -27,7 +24,6 @@ colorscheme molokai
 
 set nowrap
 set scrolloff=2
-
 
 "makes backspace work as expected for tabs and such
 set backspace=start,indent,eol
@@ -228,6 +224,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 "nerdtree settings
 let g:NERDTreeMouseMode = 2
 let g:NERDTreeWinSize = 40
+
 
 "explorer mappings
 nnoremap <f1> :BuffergatorToggle<cr>

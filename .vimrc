@@ -230,9 +230,9 @@ let g:NERDTreeMouseMode = 2
 let g:NERDTreeWinSize = 40
 
 "explorer mappings
-nnoremap <f1> :BufExplorer<cr>
+nnoremap <f1> :BuffergatorToggle<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
-nnoremap <f3> :TagbarToggle<cr>
+nnoremap <f3> :TlistToggle<cr>
 
 "statusline setup
 set statusline =%#identifier#

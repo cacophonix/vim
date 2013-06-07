@@ -229,7 +229,7 @@ let g:NERDTreeWinSize = 40
 
 
 "explorer mappings
-nnoremap <f4> :BuffergatorToggle<cr>
+nnoremap <f1> :BuffergatorToggle<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
 nnoremap <f3> :TlistToggle<cr>
 

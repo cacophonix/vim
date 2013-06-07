@@ -109,8 +109,8 @@ set hidden
 set history=1000
 set mouse=a
 
-map  <C-Right> :tabn<CR>
-map  <C-Left> :tabp<CR>
+"map  <C-Right> :tabn<CR>
+"map  <C-Left> :tabp<CR>
 map  <C-n> :tabnew<CR>
 
 " Python mode indentation
@@ -145,7 +145,7 @@ map<F5> :!python % <CR>
 
 map <Leader>ht :set filetype=html<CR>
 
-set guitablabel=%t\ %M
+set guitablabel=\[%N\]\ %t
 
 
 "{{{Auto Commands
@@ -211,12 +211,12 @@ map <Down> <Nop>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>y "*y
+map <leader><leader> <c-^>
 " Move around splits with <c-hjkl>
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+"nnoremap <c-j> <c-w>j
+"nnoremap <c-k> <c-w>k
+"nnoremap <c-h> <c-w>h
+"nnoremap <c-l> <c-w>l
 imap jj <esc>
 
 "make <c-l> clear the highlight as well as redraw

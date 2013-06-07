@@ -139,7 +139,7 @@ vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 
 
-map <F6> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
+map <F6> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
 map <F7> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out) <CR>
 map<F5> :!python % <CR>
 

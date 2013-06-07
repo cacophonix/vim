@@ -20,6 +20,8 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
+"set background=dark
+"colorscheme solarized
 colorscheme molokai
 
 set nowrap
@@ -227,7 +229,7 @@ let g:NERDTreeWinSize = 40
 
 
 "explorer mappings
-nnoremap <f1> :BuffergatorToggle<cr>
+nnoremap <f4> :BuffergatorToggle<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
 nnoremap <f3> :TlistToggle<cr>
 
@@ -399,3 +401,4 @@ function! s:Median(nums)
         return (nums[l/2] + nums[(l/2)-1]) / 2
     endif
 endfunction
+

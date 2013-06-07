@@ -123,8 +123,8 @@ set winminheight=0      " Allow windows to get fully squashed
 "
 " Switch between windows, maximizing the current window
 "
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
+"map <C-J> <C-W>j<C-W>_
+"map <C-K> <C-W>k<C-W>_
 
 set hlsearch
 set incsearch
@@ -136,7 +136,7 @@ set clipboard=unnamedplus
 
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
+inoremap <silent> <C-S>         <esc>:update<CR>a
 
 
 map <F6> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>

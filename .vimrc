@@ -233,6 +233,12 @@ nnoremap <f4> :BuffergatorToggle<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
 nnoremap <f3> :TlistToggle<cr>
 
+
+" going to remove from here
+
+
+
+
 "statusline setup
 set statusline =%#identifier#
 set statusline+=[%t] "tail of the filename
@@ -401,4 +407,5 @@ function! s:Median(nums)
         return (nums[l/2] + nums[(l/2)-1]) / 2
     endif
 endfunction
+
 

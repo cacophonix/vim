@@ -237,3 +237,4 @@ nnoremap <f3> :TlistToggle<cr>
 let g:Powerline_symbols = 'fancy'
 set guioptions-=T
 let g:buffergator_autoexpand_on_split = 0
+set guifont=Ubuntu\ Mono\ for\ VimPowerline\ 12

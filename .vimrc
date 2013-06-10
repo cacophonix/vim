@@ -238,3 +238,4 @@ let g:Powerline_symbols = 'fancy'
 set guioptions-=T
 let g:buffergator_autoexpand_on_split = 0
 set guifont=Ubuntu\ Mono\ for\ VimPowerline\ 12
+set sessionoptions=blank,buffers,curdir,folds,globals,help,localoptions,options,resize,tabpages,winsize,winpos

@@ -24,7 +24,7 @@ endif
 "colorscheme solarized
 colorscheme molokai
 
-set nowrap
+"set nowrap
 set scrolloff=2
 
 "makes backspace work as expected for tabs and such
@@ -134,14 +134,14 @@ set mousemodel=extend
 
 set clipboard=unnamedplus
 
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <esc>:update<CR>a
+"noremap <silent> <C-S>          :update<CR>
+"vnoremap <silent> <C-S>         <C-C>:update<CR>
+"inoremap <silent> <C-S>         <esc>:update<CR>a
 
 
-map <F6> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
-map <F7> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out) <CR>
-map<F5> :!python % <CR>
+map <F9> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
+"map <F7> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out) <CR>
+map<F4> :!python % <CR>
 
 map <Leader>ht :set filetype=html<CR>
 
@@ -235,3 +235,5 @@ nnoremap <f3> :TlistToggle<cr>
 
 
 let g:Powerline_symbols = 'fancy'
+set guioptions-=T
+let g:buffergator_autoexpand_on_split = 0

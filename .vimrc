@@ -134,9 +134,9 @@ set mousemodel=extend
 
 set clipboard=unnamedplus
 
-"noremap <silent> <C-S>          :update<CR>
-"vnoremap <silent> <C-S>         <C-C>:update<CR>
-"inoremap <silent> <C-S>         <esc>:update<CR>a
+nmap <silent> <C-s>         :update<CR>
+vmap <silent> <C-s>         <esc><esc>:update<CR>
+imap <silent> <C-s>     <esc>:update<CR>a
 
 
 map <F9> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
@@ -239,3 +239,4 @@ set guioptions-=T
 let g:buffergator_autoexpand_on_split = 0
 set guifont=Ubuntu\ Mono\ for\ VimPowerline\ 12
 set sessionoptions=blank,buffers,curdir,folds,globals,help,localoptions,options,resize,tabpages,winsize,winpos
+"let g:syntastic_python_checkers=['flake8']

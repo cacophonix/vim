@@ -134,10 +134,10 @@ set mousemodel=extend
 
 set clipboard=unnamedplus
 
-nmap <silent> <C-s>         :update<CR>
-vmap <silent> <C-s>         <esc><esc>:update<CR>
-imap <silent> <C-s>     <esc>:update<CR>a
-
+" Use CTRL-S for saving, also in Insert mode
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
 
 map <F9> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
 "map <F7> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out) <CR>

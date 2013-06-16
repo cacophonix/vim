@@ -135,13 +135,24 @@ set mousemodel=extend
 set clipboard=unnamedplus
 
 " Use CTRL-S for saving, also in Insert mode
-noremap <C-S> :update<CR>
-vnoremap <C-S> <C-C>:update<CR>
-inoremap <C-S> <C-O>:update<CR>
+"noremap <leader>s :w<CR>
+"vnoremap <leader>s <C-C>:update<CR>
+"inoremap <leader>s <C-o>:w<CR>
 
-map <F9> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
+" make hjkl movements accessible from insert mode via the <Alt> modifier key
+"inoremap <A-h> <C-o>h
+"inoremap <A-j> <C-o>j
+"inoremap <A-k> <C-o>k
+"inoremap <A-l> <C-o>l
+set whichwrap+=<,>,h,l,[,]
+
+inoremap <F9> <esc>:w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
+inoremap <leader><F9> <esc>:w<CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
+noremap <F9> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
+noremap <leader><F9> :w<CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
 "map <F7> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out) <CR>
-map<F4> :!python % <CR>
+noremap <F4> :!python % <CR>
+noremap <leader><F4> :w<cr>:!python % <CR>
 
 map <Leader>ht :set filetype=html<CR>
 
@@ -236,6 +247,7 @@ nnoremap <f3> :TlistToggle<cr>
 
 let g:Powerline_symbols = 'fancy'
 set guioptions-=T
+set guioptions-=m
 let g:buffergator_autoexpand_on_split = 0
 set guifont=Ubuntu\ Mono\ for\ VimPowerline\ 12
 set sessionoptions=blank,buffers,curdir,folds,globals,help,localoptions,options,resize,tabpages,winsize,winpos

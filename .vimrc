@@ -132,7 +132,7 @@ set incsearch
 set mousemodel=extend
 
 
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " Use CTRL-S for saving, also in Insert mode
 "noremap <leader>s :w<CR>
@@ -144,6 +144,7 @@ set clipboard=unnamedplus
 "inoremap <A-j> <C-o>j
 "inoremap <A-k> <C-o>k
 "inoremap <A-l> <C-o>l
+"inoremap <C-z> <c-o>u
 set whichwrap+=<,>,h,l,[,]
 
 inoremap <F9> <esc>:w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>

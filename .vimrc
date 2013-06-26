@@ -229,7 +229,7 @@ map <leader><leader> <c-^>
 "nnoremap <c-k> <c-w>k
 "nnoremap <c-h> <c-w>h
 "nnoremap <c-l> <c-w>l
-"imap jj <esc>
+inoremap jj <esc>
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>

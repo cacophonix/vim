@@ -147,13 +147,10 @@ set mousemodel=extend
 "inoremap <C-z> <c-o>u
 set whichwrap+=<,>,h,l,[,]
 
-inoremap <F9> <esc>:w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
-inoremap <leader><F9> <esc>:w<CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
-noremap <F9> :w<CR>:!xclip -o > in <CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
-noremap <leader><F9> :w<CR> :!g++ % -g && (ulimit -c unlimited; ./a.out < in) <CR>
-"map <F7> :w<CR>:!g++ % -g && (ulimit -c unlimited; ./a.out) <CR>
+inoremap <F9> <esc>:w<CR>:!g++ % -g && (ulimit -c unlimited; x-terminal-emulator -e  ./a.out ) <CR>
+noremap <F9>  :w<CR>:!g++ % -g && (ulimit -c unlimited; x-terminal-emulator -e  ./a.out ) <CR>
+
 noremap <F4> :!python % <CR>
-noremap <leader><F4> :w<cr>:!python % <CR>
 
 map <Leader>ht :set filetype=html<CR>
 
